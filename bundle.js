@@ -17584,22 +17584,15 @@
         : kt,
     Et = {
       abi: [
-        "function disperseEther(address payable[] recipients, uint256[] values)",
-        "function disperseNFT(address nft, address[] recipients, uint256[] tokenIds)",
+        "function disperseEther(address[] recipients, uint256[] values)",
         "function disperseToken(address token, address[] recipients, uint256[] values)",
         "function disperseTokenSimple(address token, address[] recipients, uint256[] values)",
-        "function setFee(uint256 _fee)",
-        "constructor()",
-        "function withdrawFees()",
-        "receive() payable",
-        "function fee() view returns (uint256)",
-        "function owner() view returns (address)",
       ],
       address: {
         1: "0xD152f549545093347A162Dce210e7293f1452150",
         3: "0xD152f549545093347A162Dce210e7293f1452150",
         4: "0xD152f549545093347A162Dce210e7293f1452150",
-        5: "0xd25468b085dd712C357aE4E0EF68Ba99B15D8d37",
+        5: "0xD152f549545093347A162Dce210e7293f1452150",
         42: "0xD152f549545093347A162Dce210e7293f1452150",
         56: "0xD152f549545093347A162Dce210e7293f1452150",
         77: "0xD152f549545093347A162Dce210e7293f1452150",
@@ -17623,6 +17616,7 @@
         1101: "0xD152f549545093347A162Dce210e7293f1452150",
         8453: "0xD152f549545093347A162Dce210e7293f1452150",
         11155111: "0xD152f549545093347A162Dce210e7293f1452150",
+        5000: "0xE3AB12862d2a50eD8E9b8ac62deb96e1f271E142",
       },
     },
     Mt = [
@@ -18013,6 +18007,20 @@
         explorer: {
           name: "etherscan",
           base: "https://sepolia.etherscan.io/",
+          tx: function (e) {
+            return "tx/" + e;
+          },
+          addr: function (e) {
+            return "address/" + e;
+          },
+        },
+      },
+      5000: {
+        name: "mantle",
+        symbol: "MNT",
+        explorer: {
+          name: "mantlescan",
+          base: "https://explorer.mantle.xyz/",
           tx: function (e) {
             return "tx/" + e;
           },
