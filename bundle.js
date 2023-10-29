@@ -17617,6 +17617,7 @@
         8453: "0xD152f549545093347A162Dce210e7293f1452150",
         11155111: "0xD152f549545093347A162Dce210e7293f1452150",
         5000: "0xE3AB12862d2a50eD8E9b8ac62deb96e1f271E142",
+        534352: "0xC774C12d4fE9B591e653C253e20a89186dfb0B3B",
       },
     },
     Mt = [
@@ -18021,6 +18022,20 @@
         explorer: {
           name: "mantlescan",
           base: "https://explorer.mantle.xyz/",
+          tx: function (e) {
+            return "tx/" + e;
+          },
+          addr: function (e) {
+            return "address/" + e;
+          },
+        },
+      },
+      534352: {
+        name: "scroll mainnet",
+        symbol: "ETH",
+        explorer: {
+          name: "scrollscan",
+          base: "https://scrollscan.com/",
           tx: function (e) {
             return "tx/" + e;
           },
