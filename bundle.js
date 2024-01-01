@@ -18065,7 +18065,7 @@
         symbol: "USDC",
         explorer: {
           name: "zkfairscan",
-          base: "https://scan.zkfair.io",
+          base: "https://scan.zkfair.io/",
           tx: function (e) {
             return "tx/" + e;
           },
