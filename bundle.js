@@ -17620,6 +17620,7 @@
         534352: "0xC774C12d4fE9B591e653C253e20a89186dfb0B3B",
         167008: "0x1747B0ee8C36C9656dD54C2c4b6f20DF8fe8D743",
         42766: "0xea2b3d8062bd121aa539998e7a0b2cde7734619d",
+        17000: "0x7c5201026FCaA7b7181ff987a78D9e8678b33246",
       },
     },
     Mt = [
@@ -18066,6 +18067,20 @@
         explorer: {
           name: "zkfairscan",
           base: "https://scan.zkfair.io/",
+          tx: function (e) {
+            return "tx/" + e;
+          },
+          addr: function (e) {
+            return "address/" + e;
+          },
+        },
+      },
+      17000: {
+        name: "Holesky",
+        symbol: "ETH",
+        explorer: {
+          name: "holeskyscan",
+          base: "https://holesky.etherscan.io/",
           tx: function (e) {
             return "tx/" + e;
           },
