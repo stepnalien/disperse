@@ -17618,7 +17618,7 @@
         11155111: "0xD152f549545093347A162Dce210e7293f1452150",
         5000: "0xE3AB12862d2a50eD8E9b8ac62deb96e1f271E142",
         534352: "0xC774C12d4fE9B591e653C253e20a89186dfb0B3B",
-        167007: "0x1747B0ee8C36C9656dD54C2c4b6f20DF8fe8D743",
+        167008: "0x1747B0ee8C36C9656dD54C2c4b6f20DF8fe8D743",
         42766: "0xea2b3d8062bd121aa539998e7a0b2cde7734619d",
       },
     },
@@ -18046,12 +18046,12 @@
           },
         },
       },
-      167007: {
-        name: "taiko a5",
+      167008: {
+        name: "taiko katla",
         symbol: "ETH",
         explorer: {
           name: "taikoscan",
-          base: "https://explorer.jolnir.taiko.xyz",
+          base: "https://explorer.katla.taiko.xyz",
           tx: function (e) {
             return "tx/" + e;
           },
