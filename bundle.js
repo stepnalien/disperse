@@ -18095,7 +18095,7 @@
         symbol: "ZETA",
         explorer: {
           name: "ZetaScan",
-          base: "https://explorer.mainnet.zetachain.com/",
+          base: "https://explorer.zetachain.com/",
           tx: function (e) {
             return "tx/" + e;
           },
