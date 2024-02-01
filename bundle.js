@@ -17621,6 +17621,7 @@
         167008: "0x1747B0ee8C36C9656dD54C2c4b6f20DF8fe8D743",
         42766: "0xea2b3d8062bd121aa539998e7a0b2cde7734619d",
         17000: "0x7c5201026FCaA7b7181ff987a78D9e8678b33246",
+        7000: "0xE3AB12862d2a50eD8E9b8ac62deb96e1f271E142",
       },
     },
     Mt = [
@@ -18081,6 +18082,20 @@
         explorer: {
           name: "holeskyscan",
           base: "https://holesky.etherscan.io/",
+          tx: function (e) {
+            return "tx/" + e;
+          },
+          addr: function (e) {
+            return "address/" + e;
+          },
+        },
+      },
+      7000: {
+        name: "ZetaChain",
+        symbol: "ZETA",
+        explorer: {
+          name: "ZetaScan",
+          base: "https://explorer.mainnet.zetachain.com/",
           tx: function (e) {
             return "tx/" + e;
           },
