@@ -17622,6 +17622,7 @@
         42766: "0xea2b3d8062bd121aa539998e7a0b2cde7734619d",
         17000: "0x7c5201026FCaA7b7181ff987a78D9e8678b33246",
         7000: "0xE3AB12862d2a50eD8E9b8ac62deb96e1f271E142",
+        34443: "0x9FA892A8d78F98EC6aCd23FC8158588562cCFc7E",
       },
     },
     Mt = [
@@ -18096,6 +18097,20 @@
         explorer: {
           name: "ZetaScan",
           base: "https://explorer.zetachain.com/",
+          tx: function (e) {
+            return "tx/" + e;
+          },
+          addr: function (e) {
+            return "address/" + e;
+          },
+        },
+      },
+      34443: {
+        name: "Mode Network",
+        symbol: "ETH",
+        explorer: {
+          name: "ModeScan",
+          base: "https://explorer.mode.network/",
           tx: function (e) {
             return "tx/" + e;
           },
