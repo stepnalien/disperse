@@ -18135,7 +18135,7 @@
           },
         },
       },
-      9001: {
+      9000: {
         name: "Emvos testnet",
         symbol: "TeVMOS",
         explorer: {
