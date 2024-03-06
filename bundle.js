@@ -17623,6 +17623,7 @@
         17000: "0x7c5201026FCaA7b7181ff987a78D9e8678b33246",
         7000: "0xE3AB12862d2a50eD8E9b8ac62deb96e1f271E142",
         34443: "0x9FA892A8d78F98EC6aCd23FC8158588562cCFc7E",
+        9001: "0x077E1F9907E9892B55Cba7F1C396864B51D14402",
       },
     },
     Mt = [
@@ -18111,6 +18112,20 @@
         explorer: {
           name: "ModeScan",
           base: "https://explorer.mode.network/",
+          tx: function (e) {
+            return "tx/" + e;
+          },
+          addr: function (e) {
+            return "address/" + e;
+          },
+        },
+      },
+      9001: {
+        name: "Emvos mainnet",
+        symbol: "EVMOS",
+        explorer: {
+          name: "EvmosScan",
+          base: "https://escan.live/",
           tx: function (e) {
             return "tx/" + e;
           },
