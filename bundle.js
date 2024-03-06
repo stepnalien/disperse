@@ -17624,6 +17624,7 @@
         7000: "0xE3AB12862d2a50eD8E9b8ac62deb96e1f271E142",
         34443: "0x9FA892A8d78F98EC6aCd23FC8158588562cCFc7E",
         9001: "0x077E1F9907E9892B55Cba7F1C396864B51D14402",
+        9000: "0x5D030b714FDf8Dc5EE299499826F50fC09a61C1c",
       },
     },
     Mt = [
@@ -18123,6 +18124,20 @@
       9001: {
         name: "Emvos mainnet",
         symbol: "EVMOS",
+        explorer: {
+          name: "EvmosScan",
+          base: "https://escan.live/",
+          tx: function (e) {
+            return "tx/" + e;
+          },
+          addr: function (e) {
+            return "address/" + e;
+          },
+        },
+      },
+      9001: {
+        name: "Emvos testnet",
+        symbol: "TeVMOS",
         explorer: {
           name: "EvmosScan",
           base: "https://escan.live/",
