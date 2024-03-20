@@ -17626,6 +17626,7 @@
         9001: "0x077E1F9907E9892B55Cba7F1C396864B51D14402",
         9000: "0x5D030b714FDf8Dc5EE299499826F50fC09a61C1c",
         534351: "0x7c5201026FCaA7b7181ff987a78D9e8678b33246",
+        421614: "0xC774C12d4fE9B591e653C253e20a89186dfb0B3B",
       },
     },
     Mt = [
@@ -18156,6 +18157,20 @@
         explorer: {
           name: "scrollscan",
           base: "https://sepolia.scrollscan.dev/",
+          tx: function (e) {
+            return "tx/" + e;
+          },
+          addr: function (e) {
+            return "address/" + e;
+          },
+        },
+      },
+      421614: {
+        name: "Arbiturm sopelia",
+        symbol: "ETH",
+        explorer: {
+          name: "scrollscan",
+          base: "https://sepolia.arbiscan.io/",
           tx: function (e) {
             return "tx/" + e;
           },
